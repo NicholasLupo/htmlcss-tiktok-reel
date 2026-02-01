@@ -41,6 +41,30 @@ video {
 	
 	flex-direction: row;
 	color: white;
+
+	.icon {
+		font-size: 20px;
+	}
+
+	.upper {
+		opacity: 40%;
+		position: relative;
+
+		.notice {
+			position: absolute;
+			top: 0;
+			right: -20%;
+			transform: translateY(-50%);
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background-color: red;
+		}
+	}
+
+	.line {
+	}
+
 }
 
 /* Footer */
@@ -60,11 +84,41 @@ footer {
 	align-items: center;
 	background-color: black;
 
+	.position {
+		position: relative;
+		text-align: center;
+
+		i {
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		.number {
+			position: absolute;
+			text-align: center;
+			width: 30%;
+			font-size: 15px;
+			border-radius: 1rem;
+			background-color: red;
+			right: 0;
+			top: 0;
+			transform: translateX(-75%);
+		}
+	}
+
+	#transparent :not(.number) {
+		opacity: 40%;
+	}
+
 	.add {
 		text-align: center;
 		color: black;
-		border: 2px;
 		width: 35px;
+		height: 30px;
+		font-size: 25px;
 		border-radius: 5px;
 		background-color: white;
 	}
@@ -94,17 +148,30 @@ footer {
 
 	.bvs {
 		height: 20%;
+		position: relative;
+
+		i {
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 15px;
+			text-align: center;
+		}
+
+		.follow {
+			position: absolute;
+			right: 30%;
+			bottom: -10%;
+			text-align: center;
+			font-size: larger;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			background-color: red;
+		}
 	}
 
-	.follow {
-		text-align: center;
-		font-size: larger;
-		height: 20px;
-		width: 20px;
-		border: 2px;
-		border-radius: 50%;
-		background-color: red;
-	}
 }
 
 /* ---------------------
