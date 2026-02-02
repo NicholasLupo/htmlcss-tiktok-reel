@@ -28,6 +28,8 @@ video {
 	display: flex;
 }
 
+/* Header */
+
 .reel-header {
 	position: absolute;
 	align-items: center;
@@ -41,23 +43,24 @@ video {
 	
 	flex-direction: row;
 	color: white;
-	min-height: 50px;
+	padding: 1rem;
 
 	.icon {
-		font-size: 20px;
 		width: 20%;
+		font-size: 20px;
 		text-align: center;
 	}
 
 	.upper {
 		opacity: 40%;
 		position: relative;
+		width: 0%;
 
 		.notice {
 			position: absolute;
-			top: 0;
-			right: -20%;
-			transform: translateY(-50%);
+			top: -20%;
+			left: -50%;
+			transform: translateX(620%);
 			height: 8px;
 			width: 8px;
 			border-radius: 50%;
@@ -66,7 +69,7 @@ video {
 	}
 
 	.line {
-		border-bottom: 3px solid;
+		border-bottom: 3px solid white;
 	}
 
 }
@@ -105,9 +108,9 @@ footer {
 			position: absolute;
 			text-align: center;
 			width: 30%;
-			font-size: 15px;
+			font-size: 12px;
 			border-radius: 1rem;
-			background-color: red;
+			background-color: #f93050;
 			right: 0;
 			top: 0;
 			transform: translateX(-75%);
@@ -122,14 +125,15 @@ footer {
 		text-align: center;
 		color: black;
 		width: 40px;
-		height: 30px;
 		font-size: 25px;
 		border-radius: 5px;
 		background-color: white;
 		margin-bottom: 11px;
+		box-shadow: 3px 0 0 fuchsia, -3px 0 0 #3cffff;
 	}
 }
 
+/* Description */
 
 .description-video{
 	position: absolute;
@@ -144,7 +148,9 @@ footer {
 		margin-bottom: 8px;
 	}
 }
+
 /* Sidebar */
+
 .sidebar {
 	padding: 0 16px;
 	position: absolute;
@@ -186,11 +192,10 @@ footer {
 			right: 30%;
 			bottom: -10%;
 			text-align: center;
-			font-size: larger;
-			height: 20px;
-			width: 20px;
-			border-radius: 50%;
-			background-color: red;
+			font-size: 15px;
+			width: 40%;
+			border-radius: 1rem;
+			background-color: #f93050;
 		}
 	}
 
@@ -200,7 +205,7 @@ footer {
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
-
+/*
 .debug footer {
 	min-height: 100px;
 	border: 2px dashed #fff;
@@ -222,4 +227,4 @@ da rimuovere una volta concluso
 	border: 2px dashed #fff;
 }
 
-/* --------------------- */
+ --------------------- */
