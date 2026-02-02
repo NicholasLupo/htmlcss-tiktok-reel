@@ -45,6 +45,8 @@ video {
 
 	.icon {
 		font-size: 20px;
+		width: 20%;
+		text-align: center;
 	}
 
 	.upper {
@@ -64,6 +66,7 @@ video {
 	}
 
 	.line {
+		border-bottom: 3px solid;
 	}
 
 }
@@ -118,20 +121,35 @@ footer {
 	.add {
 		text-align: center;
 		color: black;
-		width: 35px;
+		width: 40px;
 		height: 30px;
 		font-size: 25px;
 		border-radius: 5px;
 		background-color: white;
+		margin-bottom: 11px;
 	}
 }
 
+
+.description-video{
+	position: absolute;
+	left: 0;
+	top: 80%;
+	transform: translateY(-20%);
+	padding: 1rem;
+	min-height: 100px;
+	color: #fff;
+
+	.name-profile {
+		margin-bottom: 8px;
+	}
+}
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
-	top: 40%;
+	top: 30%; /* piccolo cit per capire, prima era a 40% */
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
@@ -196,6 +214,11 @@ da rimuovere una volta concluso
 
 .debug .reel-header {
 	min-height: 50px;
+	border: 2px dashed #fff;
+}
+
+.debug .description-video {
+	min-height: 100px;
 	border: 2px dashed #fff;
 }
 
