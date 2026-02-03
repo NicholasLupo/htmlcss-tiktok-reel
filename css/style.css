@@ -74,6 +74,8 @@ video {
 		content: '';
 		border-bottom: 3px solid white;
 		top: 10px;
+		left: 12px;
+		width: 50%;
 	}
 }
 
