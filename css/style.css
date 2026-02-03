@@ -68,10 +68,13 @@ video {
 		}
 	}
 
-	.line {
+	.line::after {
+		position: relative;
+		display: block;
+		content: '';
 		border-bottom: 3px solid white;
+		top: 10px;
 	}
-
 }
 
 /* Footer */
@@ -198,7 +201,6 @@ footer {
 			background-color: #f93050;
 		}
 	}
-
 }
 
 /* ---------------------
